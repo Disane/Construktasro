@@ -355,6 +355,7 @@ footer {
     flex-shrink: 0;
 }
 
+/* 
 .contact-form input,
 .contact-form textarea,
 .contact-form select {
@@ -372,7 +373,7 @@ footer {
 .contact-form textarea:focus {
     outline: none;
     border-color: var(--primary-color);
-}
+} */
 
 /* Responsive */
 @media (max-width: 768px) {
