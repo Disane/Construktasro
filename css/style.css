@@ -375,6 +375,127 @@ footer {
     border-color: var(--primary-color);
 } */
 
+/* Maintenance Page */
+body.maintenance-page {
+    background: radial-gradient(circle at top, rgba(255, 140, 0, 0.16), rgba(0, 0, 0, 0) 45%),
+        linear-gradient(180deg, #0f0f0f 0%, #1a1a1a 55%, #121212 100%);
+    min-height: 100vh;
+}
+
+.maintenance-wrap {
+    padding: 90px 0 120px;
+}
+
+.maintenance-hero {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.maintenance-icon {
+    font-size: 2.2rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.maintenance-hero h1 {
+    font-size: 4.2rem;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.maintenance-subtitle {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.maintenance-divider {
+    width: 90px;
+    height: 2px;
+    background-color: var(--primary-color);
+    margin: 0 auto;
+}
+
+.maintenance-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.maintenance-card {
+    text-align: center;
+    padding: 10px 25px;
+}
+
+.maintenance-card:not(:last-child) {
+    border-right: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.maintenance-card h3 {
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.05rem;
+    margin-bottom: 18px;
+}
+
+.maintenance-card p {
+    color: var(--text-muted);
+    margin-bottom: 0;
+}
+
+.maintenance-notice {
+    text-align: center;
+    padding: 55px 40px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
+    background-color: rgba(18, 18, 18, 0.7);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+}
+
+.notice-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.maintenance-notice h2 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.notice-divider {
+    width: 140px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 auto 25px;
+}
+
+.maintenance-notice p {
+    max-width: 720px;
+    margin: 0 auto 18px;
+    color: var(--text-muted);
+}
+
+.maintenance-notice p:last-child {
+    margin-bottom: 0;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .nav-links {
@@ -422,5 +543,33 @@ footer {
 
     .service-icon {
         margin: 0 auto 20px;
+    }
+
+    .maintenance-hero h1 {
+        font-size: 2.6rem;
+        letter-spacing: 3px;
+    }
+
+    .maintenance-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .maintenance-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .maintenance-card {
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+        padding-bottom: 30px;
+    }
+
+    .maintenance-card:last-child {
+        border-bottom: none;
+    }
+
+    .maintenance-notice {
+        padding: 45px 20px;
     }
 }
