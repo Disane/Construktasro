@@ -386,6 +386,32 @@ body.maintenance-page {
     padding: 90px 0 120px;
 }
 
+.maintenance-brand {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+}
+
+.maintenance-brand-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--text-main);
+    text-decoration: none;
+}
+
+.maintenance-brand-link img {
+    height: 44px;
+    width: auto;
+}
+
+.maintenance-brand-text {
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
 .maintenance-hero {
     text-align: center;
     margin-bottom: 50px;
@@ -548,6 +574,19 @@ body.maintenance-page {
     .maintenance-hero h1 {
         font-size: 2.6rem;
         letter-spacing: 3px;
+    }
+
+    .maintenance-brand {
+        margin-bottom: 30px;
+    }
+
+    .maintenance-brand-link img {
+        height: 36px;
+    }
+
+    .maintenance-brand-text {
+        font-size: 0.95rem;
+        letter-spacing: 2px;
     }
 
     .maintenance-subtitle {
